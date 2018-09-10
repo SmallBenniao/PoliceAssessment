@@ -3,7 +3,7 @@ package com.police.assessment.policeassessment.bean;
 import java.io.Serializable;
 import java.util.List;
 
-public class QuestionBean implements Serializable{
+public class QuestionBean implements Serializable {
 
     private int type;
     private String title;
