@@ -3,7 +3,9 @@ package com.police.assessment.policeassessment.adapter;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
+import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.police.assessment.policeassessment.R;
 
 import org.wjh.androidlib.listadapter.LoadMoreMultiLayoutAdapter;
@@ -51,12 +53,16 @@ public class RankingAdapter extends LoadMoreMultiLayoutAdapter<String> {
 
         if (recyclerViewHolder instanceof ViewHolder0) {
             ((ViewHolder0) recyclerViewHolder).getTextView(R.id.name).setText(s);
+            ProgressBar progressBar = (ProgressBar) ((ViewHolder0) recyclerViewHolder).getView(R.id.progress);
+            progressBar.setProgress(100);
         } else if (recyclerViewHolder instanceof ViewHolder1) {
             ((ViewHolder1) recyclerViewHolder).getTextView(R.id.name).setText(s);
         } else if (recyclerViewHolder instanceof ViewHolder2) {
             ((ViewHolder2) recyclerViewHolder).getTextView(R.id.name).setText(s);
         } else if (recyclerViewHolder instanceof ViewHolder3) {
-            ((ViewHolder3) recyclerViewHolder).getTextView(R.id.name).setText(s);
+            ((ViewHolder3) recyclerViewHolder).getTextView(R.id.name).setText(s+(i%2==0?"额":"额额额"));
+            ProgressBar progressBar = (ProgressBar) ((ViewHolder3) recyclerViewHolder).getView(R.id.progress);
+            progressBar.setProgress(80 - i*2);
         }
     }
 
