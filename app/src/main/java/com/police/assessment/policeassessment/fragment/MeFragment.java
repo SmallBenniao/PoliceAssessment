@@ -37,6 +37,7 @@ public class MeFragment extends BaseFragment {
 
     @OnClick(R.id.right_button)
     public void onViewClicked() {
+        showSuccessMsg("设置");
     }
 
 }
