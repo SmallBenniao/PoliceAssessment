@@ -6,6 +6,75 @@
     android:orientation="vertical"
     tools:context=".fragment.AssessmentFragment">
 
-    <include layout="@layout/include_toolbar_main"/>
+    <include layout="@layout/include_toolbar_main" />
+
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:drawableLeft="@mipmap/day_answer"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="每日答题"
+        android:textColor="#666666"
+        android:textSize="17dp" />
+
+    <include layout="@layout/line_gray_dark" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:drawableLeft="@mipmap/month_answer"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="月末考核"
+        android:textColor="#666666"
+        android:textSize="17dp" />
+
+    <include layout="@layout/line_gray_dark" />
+
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:drawableLeft="@mipmap/answer_record"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="考核记录"
+        android:textColor="#666666"
+        android:textSize="17dp" />
+
+    <include layout="@layout/line_gray_dark" />
+
+    <TextView
+        android:id="@+id/integral"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:drawableLeft="@mipmap/integral"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="积分记录"
+        android:textColor="#666666"
+        android:textSize="17dp" />
+
+    <include layout="@layout/line_gray_dark" />
 
 </LinearLayout>
