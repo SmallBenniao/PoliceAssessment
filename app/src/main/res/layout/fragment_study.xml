@@ -6,6 +6,6 @@
     android:orientation="vertical"
     tools:context=".fragment.StudyFragment">
 
-    <include layout="@layout/include_toolbar_main"/>
+    <include layout="@layout/include_toolbar_main" />
 
 </LinearLayout>

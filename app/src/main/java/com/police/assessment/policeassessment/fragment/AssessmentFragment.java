@@ -4,6 +4,7 @@ package com.police.assessment.policeassessment.fragment;
 import android.view.View;
 
 import com.police.assessment.policeassessment.R;
+import com.police.assessment.policeassessment.activity.DayAnswerActivity;
 import com.police.assessment.policeassessment.base.fragment.BaseFragment;
 
 import butterknife.ButterKnife;
@@ -39,6 +40,7 @@ public class AssessmentFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.day:
+                jumpActivity(DayAnswerActivity.class);
                 break;
             case R.id.month:
                 break;
