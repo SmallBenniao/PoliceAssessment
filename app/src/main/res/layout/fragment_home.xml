@@ -1,11 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
 
-    <include layout="@layout/include_toolbar_main" />
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/background" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/winner_img"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/default_tx"
+                    app:civ_border_color="#FFEBC135"
+                    app:civ_border_width="3dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/win" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/winner_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="冠军  龙哥"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/include_ranking_me" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        layout="@layout/include_ranking_me2"
+        android:visibility="gone" />
+
+
+</FrameLayout>
