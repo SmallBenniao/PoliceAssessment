@@ -24,7 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/background" />
+                    android:src="@mipmap/ranking_bg" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/winner_img"
@@ -54,10 +54,28 @@
                     android:textColor="#fff"
                     android:textSize="17dp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="签到"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="通告"
+                    android:textColor="#fff"
+                    android:textSize="17dp" />
+
             </RelativeLayout>
 
-            <include
-                layout="@layout/include_ranking_me" />
+            <include layout="@layout/include_ranking_me" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv"

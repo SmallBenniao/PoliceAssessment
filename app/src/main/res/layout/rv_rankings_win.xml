@@ -4,48 +4,60 @@
     android:layout_width="match_parent"
     android:layout_height="70dp">
 
-    <ImageView
-        android:id="@+id/temp"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:src="@mipmap/winner" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/winner_img"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_centerInParent="true"
-        android:layout_toRightOf="@id/temp"
-        android:src="@mipmap/default_tx"
-        app:civ_border_color="#FFEBC135"
-        app:civ_border_width="1dp" />
+        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/winner" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_toRightOf="@id/winner_img"
-        android:text="龙哥"
-        android:textColor="#2b2b2b"
-        android:textSize="15dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/winner_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/temp"
+            android:src="@mipmap/default_tx"
+            app:civ_border_color="#FFEBC135"
+            app:civ_border_width="1dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
-        android:text="41148"
-        android:textColor="#2b2b2b"
-        android:textSize="15dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/winner_img"
+            android:lines="1"
+            android:text="龙哥"
+            android:textColor="#2b2b2b"
+            android:textSize="15dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progressDrawable="@drawable/progress" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="41148"
+            android:textColor="#2b2b2b"
+            android:textSize="15dp" />
+    </LinearLayout>
 
     <include
         layout="@layout/line_gray_dark"
