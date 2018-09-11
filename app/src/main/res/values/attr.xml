@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SelectItemStyle">
+
+        <attr name="itemTitle" format="string" />
+        <attr name="itemContent" format="string" />
+
+    </declare-styleable>
+</resources>

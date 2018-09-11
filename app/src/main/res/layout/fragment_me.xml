@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,5 +8,181 @@
     tools:context=".fragment.MeFragment">
 
     <include layout="@layout/include_toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/line_gray_2bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/default_tx" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/more"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:text="账号"
+                        android:textColor="#494949"
+                        android:textSize="16dp" />
+
+                    <include
+                        layout="@layout/line_gray_dark"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/temp1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="上月考核积分"
+                                android:textColor="#797979"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/temp1"
+                                android:gravity="center_horizontal"
+                                android:text="30"
+                                android:textColor="#999999"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/temp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="总积分"
+                                android:textColor="#797979"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/temp2"
+                                android:gravity="center_horizontal"
+                                android:text="100"
+                                android:textColor="#999999"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_gray_bold" />
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="龙哥"
+                app:itemTitle="用户名" />
+
+            <include layout="@layout/line_gray_dark" />
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="12330498424"
+                app:itemTitle="电话" />
+
+            <include layout="@layout/line_gray_dark" />
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="1233049842444444"
+                app:itemTitle="身份证号" />
+
+            <include layout="@layout/line_gray_bold" />
+
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="334354"
+                app:itemTitle="民警编号" />
+
+            <include layout="@layout/line_gray_dark" />
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="北京"
+                app:itemTitle="区域" />
+
+            <include layout="@layout/line_gray_bold" />
+
+            <com.police.assessment.policeassessment.widget.SelectItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="2018-07-03 22:10"
+                app:itemTitle="最后一次登录时间" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

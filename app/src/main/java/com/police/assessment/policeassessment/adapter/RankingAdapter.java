@@ -5,7 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.police.assessment.policeassessment.R;
 
 import org.wjh.androidlib.listadapter.LoadMoreMultiLayoutAdapter;

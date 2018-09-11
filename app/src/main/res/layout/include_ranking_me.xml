@@ -35,7 +35,6 @@
             android:textSize="15dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/my_img"
             app:civ_border_color="#FFEBC135"
             app:civ_border_width="1dp"
             android:layout_width="45dp"

@@ -23,6 +23,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
+                    android:background="@color/mainColor"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/ranking_bg" />
 
@@ -40,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:paddingLeft="30dp"
-                    android:paddingTop="10dp"
+                    android:paddingTop="15dp"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/win" />
 
